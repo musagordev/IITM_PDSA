@@ -1,6 +1,7 @@
 # Greedy Algorithm
 # In a factory to work with N independent job lines. Each job requires amount of time to be completed.
 # Optimize scheduling jobs for minimizing lateness to complete all jobs.
+# N is number of working lines. jobs is a list of tuples, (job_id, time_required, due_time)
 
 def minimizeLateness(N,jobs):
     jobs = sorted(jobs, key=lambda x: x[2])
